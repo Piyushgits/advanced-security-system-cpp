@@ -511,30 +511,24 @@ int main() {
                 searchUser();
                 break;
             case 6:
-                displayAllUsers();
-                break;
+                  displayAllUsers();
+                 break;
             case 7:
-                deleteUser();
-                break;
+                   deleteUser();
+                  break;
             case 8:
-                unlockUser();
-                break;
+                  unlockUser();
+                   break;
             case 9:
-                viewLogs();
-                break;
+                   viewLogs();
+                   break;
             case 10:
-                cout << "Exiting program. Goodbye.\n";
+                cout << "Exiting program, Goodbye\n";
                 break;
             default:
-                cout << "Invalid choice. Try again.\n";
+                cout << "Invalid choice, Try again\n";
         }
-
-        if (choice != 10) {
-            clearInput();
-            pauseScreen();
-        }
-
+        if (choice != 10) {clearInput();pauseScreen();}
     } while (choice != 10);
-
     return 0;
 }
